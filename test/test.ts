@@ -159,6 +159,12 @@ css`
     }
 `;
 
+// typed css
+css<any>`
+    div #id .class[attribute] {
+    }
+`;
+
 /* Comment-style */
 
 /* html */ `<div></div>`;
@@ -171,6 +177,7 @@ css`
 /*css*/`.css {}`;
 /*              css          */               `.css {}`;
 /* css */ `.${exp} {}`;
+/* css<any> */`.css {}`;
 
 
 /* should not match */
